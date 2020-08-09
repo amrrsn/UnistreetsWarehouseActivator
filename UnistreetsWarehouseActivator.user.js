@@ -17,9 +17,7 @@
     function buildEverything()
     {
         var cookieMonster = document.cookie;
-        var numEven = $('.evens').length;
-        var numOdd = $('.odds').length;
-        var numItems = numEven + numOdd;
+        var numItems = $('.evens').length + $('.odds').length;
 
         for (var i = 1; i < numItems; i++)
         {
