@@ -2,7 +2,7 @@
 // @name         UnistreetsWarehouseActivator
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @license      GPLV3
+// @license      MIT
 // @description  Activates Every Warehouse Without Reloads
 // @author       SomeDude
 // @match        https://www.unistreets.com/warehouse.php
