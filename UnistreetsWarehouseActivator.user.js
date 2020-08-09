@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         UnistreetsWarehouseActivator
-// @namespace    http://tampermonkey.net/
-// @version      0.2
-// @updateURL    https://openuserjs.org/meta/SomeDude/UnistreetsWarehouseActivator.meta.js
-// @license      MIT
 // @description  Activates Every Warehouse Without Reloads
+// @version      0.2
+// @license      MIT
 // @author       SomeDude
-// @match        https://www.unistreets.com/warehouse.php
 // @grant        none
+// @namespace    http://tampermonkey.net/
+// @updateURL    https://openuserjs.org/meta/SomeDude/UnistreetsWarehouseActivator.meta.js
+// @match        https://www.unistreets.com/warehouse.php
 // ==/UserScript==
 
 (function() {
@@ -35,8 +35,6 @@
                         "upgrade-insecure-requests": "1",
                         "cookie": cookieMonster
                     },
-                    "referrer": "https://www.unistreets.com/warehouse.php",
-                    "referrerPolicy": "no-referrer-when-downgrade",
                     "body": "Start=Start",
                     "method": "POST",
                     "mode": "cors"
