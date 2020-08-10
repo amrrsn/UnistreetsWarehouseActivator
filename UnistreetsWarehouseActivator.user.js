@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UnistreetsWarehouseActivator
 // @description  Activates Every Warehouse Without Reloads
-// @version      0.2
+// @version      0.3
 // @license      MIT
 // @author       SomeDude
 // @grant        none
@@ -21,7 +21,7 @@
         var numItems = $('.evens').length + $('.odds').length;
 
         if (!$("table").hasClass("table-gang")) {
-            for (var i = 1; i < numItems; i++) {
+            for (var i = 1; i <= numItems; i++) {
                 fetch("https://www.unistreets.com/warehouse.php?action=start&MID=" + i, {
                     "headers": {
                         "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
